@@ -1,3 +1,8 @@
+This strucure is intented to be used for records regarding students of our university. The max insertion complexity is O(n) where n is the number of records already in our structure. Depending on the type of queries the access cost is O(1) or O(n). For special queries of range we can have a linear cost O(k) where k is the number of records of interest.
+
+To achieve an O(n) access to the records a skip-list (http://cgi.di.uoa.gr/~ad/k22/skiplist-note.pdf , ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf) was used. Moreover to achieve O(k) range queries chained hashing was used (https://en.wikibooks.org/wiki/Data_Structures/Hash_Tables#Chaining). The actions that are available to be performed in the structure are query for specific student id, modify for gpa, delete, average, find, percentile and more. For a detailed description in Greek see Εκφώνηση 1ης Εργασιας.pdf
+
+
 # Readme
 
 Thanasis Filippidis sdi1400215@di.uoa.gr
